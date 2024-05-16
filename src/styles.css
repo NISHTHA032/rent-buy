@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: #ffffff;
+  /* color: #c6bebe; */
+}
+
+
+
+.calculator-box {
+  position: relative;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  color: rgba(7, 7, 7, 0.87);
+  border: 2px solid #1d1e1e;
+  border-radius: 20px;
+  font-weight: 0; 
+}
+
+.calculator-container {
+  flex: 1;
+  margin-right: auto;
+  flex-basis: 70%;
+}
+
+.result-box {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  max-width: 400px;
+  margin-top: 415px;
+  bottom: 350px;
+}
+
+.result {
+  height: 350px;
+  margin-top: 200px;
+  flex-basis: 50%;
+  padding: 20px;
+  background-color: #9c9a9a;
+  border-radius: 10px;
+}
+
+.result p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 20px;
+  padding-left: 200px;
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.options input[type="radio"] {
+  display: none;
+}
+
+.options label {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #111111;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+.options input[type="radio"]:checked+label {
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+.form-control {
+  width: auto;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #050505;
+  border-radius: 5px;
+  color: #050505;
+  background-color: white; 
+}
+.form-container {
+  flex-basis: 60%;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form-group label {
+  flex-basis: 30%;
+  margin-right: 10px;
+}
+
+.form-group input[type="number"] {
+  flex-basis: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
